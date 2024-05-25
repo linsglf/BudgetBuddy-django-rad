@@ -58,4 +58,4 @@ Para executar o BudgetBuddy localmente, siga estas etapas:
 
 ---
 
-Com o BudgetBuddy, gerenciar suas despesas nunca foi tão fácil! Se você tiver alguma dúvida ou precisar de assistência, não hesite em
+Com o BudgetBuddy, gerenciar suas despesas nunca foi tão fácil! 
