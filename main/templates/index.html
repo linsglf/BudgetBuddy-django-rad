@@ -1,0 +1,86 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/app/index_style.css' %}">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <h1 id="titulo">BudgetBuddy</h1>
+            <nav class="linha">
+                <ul id="nav">
+                    <li><a class="menu-item" href="#sobre">About BudgetBuddy</a></li>
+                    <li><a class="menu-item" href="#recursos">Features</a></li>
+                    <li><a class="menu-item" href="#comece-agora">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div id="sobre-info">
+            <h2 id="sobre-titulo">Discover BudgetBuddy:<br> Your Personal Finance Tool</h2>
+            <br>
+            <p id="sobre-desc">
+                Our ultimate goal is to empower you to effectively manage your personal finances and achieve your financial aspirations. Using our platform, you can easily track your expenses, establish customized budgets, and strategically plan for your financial future.</p>
+        </div>
+    </section>
+
+    <section id="recursos">
+        <div id="recursos-info">
+            <h2 id="recursos-titulo">Features</h2>
+            <ul>
+                <li>Expense Management</li>
+                <li>Custom Budgets</li>
+                <li>Financial Reports</li>
+                <li>Financial Goals Tracking</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="comece-agora">
+        <h2 id="comece-agora-titulo">Get Started</h2>
+        <div id="form-comece-agora">
+            <!-- Aqui pode ser inserido um formulário de inscrição ou qualquer outro elemento para começar -->
+        </div>
+        <div id="botao-comece-agora">
+            <a href="/auth/login" class="botao-signin"><button>Sign In</button></a>
+            <a href="/auth/cadastro" class="botao-signup"><button>Sign Up</button></a>
+        </div>
+    </section>
+    
+
+    <footer id="footer">
+        <!-- Here can be added any additional content in the footer -->
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const buttons = document.querySelectorAll('.botao-signin, .botao-signup');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault(); // Impede o comportamento padrão de redirecionamento
+
+                    // Adiciona a classe 'clicked' para aplicar a transição de opacidade
+                    this.classList.add('clicked');
+
+                    // Obtém o link de redirecionamento do botão
+                    const redirectURL = this.getAttribute('href');
+
+                    // Aguarda 2 segundos antes de redirecionar para a página
+                    setTimeout(function() {
+                        window.location.href = redirectURL;
+                    }, 400);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

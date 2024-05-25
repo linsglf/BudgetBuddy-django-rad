@@ -1,0 +1,23 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Despesa</title>
+    <link rel="stylesheet" href="{% static 'css/app/edit_expense_style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h2>Editar Despesa</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Salvar</button>
+        </form>
+        <a href="{% url 'home' %}">Cancelar</a>
+    </div>
+</body>
+</html>

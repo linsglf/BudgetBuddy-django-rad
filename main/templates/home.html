@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Finanças</title>
+    <link rel="stylesheet" href="{% static 'css/app/home_style.css' %}">
+</head>
+<body>
+    <div class="header">
+        <div class="welcome">
+            Olá, {{ user.first_name }}
+        </div>
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="logout-btn">Logout</button>
+        </form>
+    </div>
+    <div class="container">
+        <h1>Total de Gastos: R${{ total_expenses }}</h1>
+
+        <form action="{% url 'add_expense' %}" method="get">
+            <button class="btn" type="submit">Adicionar Despesa</button>
+        </form>
+
+        <!-- Tabela para listar os gastos -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Valor</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for expense in expenses %}
+                    <tr>
+                        <td>{{ expense.date }}</td>
+                        <td>{{ expense.description }}</td>
+                        <td>R${{ expense.amount }}</td>
+                        <td>
+                            <a href="{% url 'edit_expense' expense.id %}" >
+                                <button class="btn">Editar</button>
+                            </a>
+                            
+                            </button>
+                            <form action="{% url 'delete_expense' expense.id %}" method="post" style="display:inline;">
+                                {% csrf_token %}
+                                <button class="btn" type="submit">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% empty %}
+                    <tr>
+                        <td colspan="4">Nenhuma despesa registrada este mês.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
