@@ -4,11 +4,11 @@ BudgetBuddy é uma aplicação de gerenciamento de despesas projetada para ajud�
 
 ### Principais Recursos
 
-- **Registro de Despesas**: Adicione facilmente suas despesas, incluindo data, descrição e valor.
-- **Visualização Detalhada**: Visualize suas despesas em uma tabela fácil de entender, mostrando a data, descrição e valor de cada despesa.
-- **Edição e Exclusão**: Edite ou exclua despesas existentes conforme necessário para manter seus registros atualizados.
-- **Autenticação de Usuário**: A aplicação requer autenticação de usuário para garantir que apenas usuários autorizados possam acessar e gerenciar suas despesas.
-- **Interface Amigável**: A interface intuitiva e amigável torna a navegação e o uso da aplicação simples e diretos.
+- Adicione facilmente suas despesas, incluindo data, descrição e valor.
+- Visualize suas despesas em uma tabela fácil de entender, mostrando a data, descrição e valor de cada despesa.
+- Edite ou exclua despesas existentes conforme necessário para manter seus registros atualizados.
+- A aplicação requer autenticação de usuário para garantir que apenas usuários autorizados possam acessar e gerenciar suas despesas.
+- A interface intuitiva e amigável torna a navegação e o uso da aplicação simples e diretos.
 
 ### Tecnologias Utilizadas
 
