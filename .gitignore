@@ -1,2 +1,17 @@
 venv
 db.sqlite3
+
+# Arquivos de compilação Python
+*.pyc
+__pycache__/
+
+# Ambiente virtual
+venv/
+env/
+
+# Arquivos de log
+*.log
+
+# Arquivos de backup
+*.bak
+*~.nib
