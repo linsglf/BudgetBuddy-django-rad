@@ -23,7 +23,7 @@ Para executar o BudgetBuddy localmente, siga estas etapas:
 1. Clone o repositório para o seu ambiente de desenvolvimento local:
 
    ```
-   git clone https://github.com/seu-usuario/budgetbuddy.git
+   git clone [https://github.com/seu-usuario/budgetbuddy.git]
    ```
 
 2. Navegue até o diretório do projeto:
