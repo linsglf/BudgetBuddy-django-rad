@@ -6,7 +6,7 @@ db.sqlite3
 __pycache__/
 
 # Ambiente virtual
-venv/
+.venv/
 env/
 
 # Arquivos de log
