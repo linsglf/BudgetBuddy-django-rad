@@ -15,3 +15,7 @@ env/
 # Arquivos de backup
 *.bak
 *~.nib
+
+# Arquivo de Logs
+registration_log.txt
+login_attempts_log.txt
