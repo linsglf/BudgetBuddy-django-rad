@@ -23,7 +23,7 @@ Para executar o BudgetBuddy localmente, siga estas etapas:
 1. Clone o repositório para o seu ambiente de desenvolvimento local:
 
    ```
-   git clone https://github.com/seu-usuario/budgetbuddy.git
+   git clone https://github.com/linsglf/BudgetBuddy-django-rad
    ```
 
 2. Navegue até o diretório do projeto:
@@ -56,10 +56,6 @@ Para executar o BudgetBuddy localmente, siga estas etapas:
    http://localhost:8000
    ```
 
-### Licença
-
-Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licenses/MIT) - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 ---
 
-Com o BudgetBuddy, gerenciar suas despesas nunca foi tão fácil! Se você tiver alguma dúvida ou precisar de assistência, não hesite em
+Com o BudgetBuddy, gerenciar suas despesas nunca foi tão fácil! 
