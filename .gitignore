@@ -17,5 +17,5 @@ env/
 *~.nib
 
 # Arquivo de Logs
+login_attempts.txt
 registration_log.txt
-login_attempts_log.txt
